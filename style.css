@@ -1,0 +1,494 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.topnav a img {
+    height: auto;
+    width: 50%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #555;
+    text-align: center;
+    font-size: 17px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+.topnav a img.logo {
+    padding: 12px;
+}
+
+.topnav .links {
+    padding-right: 12px;
+    margin-right: 25px;
+}
+
+.topnav ul {
+    margin-top: 1px;
+}
+
+.topnav ul li {
+    list-style: none;
+    display: block;
+    line-height: 80px;
+    visibility: hidden;
+}
+
+.topnav a:hover {
+    color: #78de82;
+}
+
+.topnav a.active {
+    color: #78de82;
+}
+
+.topnav label.icon {
+    float: right;
+    display: block;
+    font-size: 30px;
+    margin-top: 17px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.topnav #check {
+    display: none;
+}
+
+.topnav label.icon:hover {
+    color: #4dc959;
+}
+
+main {
+    margin-top: 60px;
+    background-color: white;
+    text-align: center;
+    place-items: center;
+}
+
+button {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 15px;
+    border: 0px solid black;
+    font-family: monospace;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+button {
+    color: white;
+    background-color: #4dc959;
+    cursor: pointer;
+}
+
+h1, p {
+    text-align: center;
+    color: black;
+}
+
+header {
+    background-image: url("../media/header_photo.jpg");
+    background-size: cover;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+header, main {
+    align-content: center;
+    margin: 0;
+    padding: 13px 100px;
+    text-align: center;
+    padding-left: 50px;
+}
+
+main {
+    padding-bottom: 70px;
+}
+
+footer {
+    background-color: #222;
+    padding: 60px 7%;
+    color: white;
+    display: grid;
+}
+
+footer h2 {
+    font-family: montserrat;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-family: arial;
+    text-decoration: none;
+}
+
+ul li a > i {
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+footer input {
+    height: 50px;
+    width: 300px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.grid {
+    display: flex;
+    max-width: 1170px;
+    margin-bottom: 50px;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+.grid .left {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+
+.grid .right {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+
+.left .content {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.right .content {
+    text-align: center;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+}
+
+.content a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    font-family: arial;
+    font-weight: bold;
+}
+
+figure figcaption a {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.left .content a:hover, .right .content a:hover {
+    border-bottom-color: #222;
+    border-bottom-width: 3px;
+    border-bottom-style: solid; 
+    padding-bottom: 10px;
+}
+
+figure figcaption a:hover {
+    border-bottom-color: #222;
+    border-bottom-width: 3px;
+    border-bottom-style: solid; 
+    padding-bottom: 10px;
+}
+
+.redirect {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.one {
+    background-image: linear-gradient(green , lightgreen);
+}
+
+.two {
+    background-image: linear-gradient(pink , yellow);
+}
+
+.three {
+    background-image: linear-gradient(purple , skyblue);
+}
+
+.four {
+    background-image: linear-gradient(blue , aqua);
+}
+
+.redirect p, .redirect h1 {
+    color: white;
+    margin-right: 50px;
+}
+
+.team-content {
+    align-self: center;
+    margin: 0 auto;
+    height: 500vh;
+    grid-template-columns: repeat(auto-fit, mixmax(150px, auto));
+    flex-direction: column;
+    grid-gap: 2rem;
+    margin-left: 25px;
+    width: 100%;
+}
+
+.box img {
+    border-radius: 10%;
+}
+
+/** EXTRA DESKTOP RESPONSIVE CSS **/
+@media only screen and (min-width:769px) {
+    header {
+        margin-top: 100px;
+        padding-top: 80px;
+    }
+    main {
+        margin-top: 50px;
+    }
+    .topnav a {
+        font-size: 18px;
+    }
+    .topnav img.logo {
+        height: 115px;
+        width: 155px;
+    }
+    .topnav label.icon {
+        display: none;
+    }
+    .topnav .links {
+        display: block;
+    }
+    .topnav ul li {
+        margin-top: 30px;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin-right: 8px;
+        visibility: visible;
+    }
+    .topnav ul {
+        float: right;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .content a {
+        font-size: 18px;
+    }
+    .left .content {
+        padding-right: 0;
+        width: 90%;
+    }
+    .right .content {
+        padding-left: 0;
+        width: 90%;
+    }
+    .grid {
+        display: flex;
+        width: 100%;
+        grid-template-columns: repeat (2, 1fr);
+        margin-left: 15px;
+    }
+    .grid .left {
+        width: 140%;
+        margin: 10px;
+        align-self: start;
+        justify-self: start;
+        text-align: center;
+    }
+    .grid .right {
+        margin: 10px;
+        align-self: end;
+        justify-self: end;
+        text-align: center;
+    }
+    .col2 {
+        flex-grow: 1;
+    }
+    footer {
+        display: flex;
+    }
+    .redirect {
+        padding: 80px;
+    }
+    .box img {
+        width: 25%;
+        height: 70%;
+    }
+    .team-content {
+        display: flex;
+    }
+    .left img {
+        margin-bottom: 45px;
+    }
+    .right img {
+        margin-bottom: 45px;
+    }
+    .col2 figure img {
+        height: 200px;
+        width: 300px;
+    }
+    img.cmis {
+        width: 135%; margin-right: 700px;
+    }
+}
+
+/** MOBILE RESPONSIVE CSS **/
+@media only screen and (max-width:769px) {
+    header {
+        margin-top: 150px;
+    }
+    main {
+        margin-top: 50px;
+    }
+    .topnav {
+        padding-left: 1px;
+    } 
+   .topnav ul {
+       position: fixed;
+       background: #edf0f5;
+       width: 100%;
+       height: 0;
+       top: 138px;
+       left: 0;
+       text-align: center;
+       align-items: center;
+       transition: all 0.5s;
+       align-self: center;
+   }
+    nav a {
+        font-size: 17px;
+    }
+    .topnav ul li {
+        display: none;
+        visibility: hidden;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        transition: all 0.20s;
+        font-size: 17px;
+    }
+    .topnav label.icon {
+        font-size: 50px;
+        margin-top: 40px;
+        display: block;
+    }
+    .topnav img.logo {
+        height: auto;
+        width: 115px;
+    }
+    .topnav #check:checked ~ ul {
+        height: 100vh;
+    }
+    .topnav #check:checked ~ ul li {
+        visibility: visible;
+        display: block;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .content a {
+        font-size: 15px;
+    }
+    .grid {
+        display: grid;
+        align-self: center;
+        width: 135%;
+        grid-template-columns: 1fr;
+    }
+    .grid img {
+        align-self: center;
+    }
+    footer {
+        display: grid;
+    }
+    footer div {
+        margin-bottom: 20px;
+    }
+    .redirect {
+        padding: 40px;
+    }
+    figure {
+        margin-right: 100px;
+    }
+    .box img {
+        width: 100%;
+        height: 60%;
+    }
+    .team-content {
+        display: flex;
+    }
+    .col2 figure img {
+        height: auto;
+        width: 125%;
+    }
+    img.cmis {
+        width: 100%; margin-right: 950px;
+    }
+}
